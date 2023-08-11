@@ -1,0 +1,35 @@
+@import "./src/base";
+
+.custom-button-container {
+  display: flex;
+  align-items: center;
+  min-width: 610px;
+}
+
+.horizontal-line {
+  flex-grow: 1; /* Extend the line to fill available space */
+  height: 1px;
+  background-color: $light-grey;
+}
+
+.custom-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: $purple;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-button:active {
+  background-color: $off-black;
+}
+
+.custom-button svg {
+  fill: white; /* Set SVG fill color */
+  width: 40px;
+  height: 40px;
+}
