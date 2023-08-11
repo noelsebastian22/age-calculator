@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { AgeCalculatorFormComponent } from './components/age-calculator-form/age-calculator-form.component';
+import { AgeCalculatorMainComponent } from './components/age-calculator-main/age-calculator-main.component';
 
 @Component({
   selector: 'app-age-calculator',
   templateUrl: './age-calculator.component.html',
   styleUrls: ['./age-calculator.component.scss'],
   standalone: true,
-  imports: [AgeCalculatorFormComponent],
+  imports: [AgeCalculatorFormComponent, AgeCalculatorMainComponent],
 })
 export class AgeCalculatorComponent {
   title = 'Age Calculator';

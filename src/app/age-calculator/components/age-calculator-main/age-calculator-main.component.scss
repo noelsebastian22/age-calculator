@@ -1,0 +1,14 @@
+@import "./src/base";
+
+.age-calculator {
+  font-family: $font-family;
+  font-style: italic;
+  font-weight: $font-weight-bolder;
+  font-size: 55px;
+  &__age {
+    &__number {
+      color: $purple;
+      margin-right: 5px;
+    }
+  }
+}
