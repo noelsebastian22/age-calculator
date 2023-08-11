@@ -5,6 +5,7 @@ import {
   FormGroup,
   ReactiveFormsModule,
 } from '@angular/forms';
+import { LineButtonComponent } from 'src/app/shared/components/line-button/line-button.component';
 import { TextInputComponent } from 'src/app/shared/components/text-input/text-input.component';
 
 @Component({
@@ -12,7 +13,7 @@ import { TextInputComponent } from 'src/app/shared/components/text-input/text-in
   templateUrl: './age-calculator-form.component.html',
   styleUrls: ['./age-calculator-form.component.scss'],
   standalone: true,
-  imports: [ReactiveFormsModule, TextInputComponent],
+  imports: [ReactiveFormsModule, TextInputComponent, LineButtonComponent],
 })
 export class AgeCalculatorFormComponent {
   form!: FormGroup;
