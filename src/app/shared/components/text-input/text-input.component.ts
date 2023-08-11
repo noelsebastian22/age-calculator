@@ -18,6 +18,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 })
 export class TextInputComponent implements ControlValueAccessor {
   @Input() label: string;
+  @Input() placeholder: string;
 
   value: string = '';
   isFocused: boolean = false;

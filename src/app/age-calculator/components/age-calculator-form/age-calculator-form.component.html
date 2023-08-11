@@ -1,5 +1,10 @@
 <div class="age-calculator-form__main">
-  <app-text-input [label]="'DAY'"></app-text-input>
-  <app-text-input [label]="'MONTH'"></app-text-input>
-  <app-text-input [label]="'YEAR'"></app-text-input>
+  <div class="age-calculator-form__main__date-input">
+    <app-text-input [label]="'DAY'" [placeholder]="'DD'"></app-text-input>
+    <app-text-input [label]="'MONTH'" [placeholder]="'MM'"></app-text-input>
+    <app-text-input [label]="'YEAR'" [placeholder]="'YYYY'"></app-text-input>
+  </div>
+  <div class="age-calculator-form__main__button">
+    <button>Click Me</button>
+  </div>
 </div>
