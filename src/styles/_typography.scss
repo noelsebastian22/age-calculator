@@ -1,0 +1,51 @@
+$font: "Poppins";
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+
+@font-face {
+  font-family: #{$font};
+  src: url(../assets/fonts/Poppins-Regular.ttf) format("truetype");
+  /* Add more src entries for other font formats if needed */
+  font-weight: $font-weight-normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: #{$font};
+  src: url(../assets/fonts/Poppins-Italic.ttf) format("truetype");
+  /* Add more src entries for other font formats if needed */
+  font-weight: $font-weight-normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: #{$font};
+  src: url(../assets/fonts/Poppins-Bold.ttf) format("truetype");
+  /* Add more src entries for other font formats if needed */
+  letter-spacing: 0.05em;
+  font-weight: $font-weight-bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: #{$font};
+  src: url(../assets/fonts/Poppins-BoldItalic.ttf) format("truetype");
+  /* Add more src entries for other font formats if needed */
+  font-weight: $font-weight-bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: #{$font};
+  src: url(../assets/fonts/Poppins-ExtraBold.ttf) format("truetype");
+  /* Add more src entries for other font formats if needed */
+  font-weight: $font-weight-bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: #{$font};
+  src: url(../assets/fonts/Poppins-ExtraBoldItalic.ttf) format("truetype");
+  /* Add more src entries for other font formats if needed */
+  font-weight: $font-weight-bolder;
+  font-style: italic;
+}
+
+$font-family: "#{$font}", Helvetica, Arial, sans-serif;

@@ -1,0 +1,12 @@
+<div class="custom-input-container">
+  <label *ngIf="label">{{ label }}</label>
+  <input
+    type="text"
+    class="custom-input"
+    [class.focused]="isFocused"
+    (focus)="isFocused = true"
+    (blur)="isFocused = false"
+    [value]="value"
+    (input)="onInput($event)"
+  />
+</div>

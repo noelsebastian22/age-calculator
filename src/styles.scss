@@ -2,6 +2,8 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
+@import "base";
+
 *,
 *::before,
 *::after {
@@ -21,6 +23,11 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: hsl(0, 0%, 94%);
+  min-height: 100vh;
+  font-size: 32px;
+  display: grid;
+  place-items: center;
 }
 /*
     5. Improve media defaults
@@ -53,4 +60,8 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+input:focus-visible {
+  outline: none;
 }
