@@ -1,0 +1,9 @@
+.age-calculator-form {
+  &__main {
+    display: flex;
+    & * {
+      width: 150px;
+      margin: 10px;
+    }
+  }
+}
