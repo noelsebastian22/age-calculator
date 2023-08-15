@@ -1,13 +1,19 @@
 <div class="custom-input-container">
-  <label *ngIf="label">{{ label }}</label>
+  <label *ngIf="label" [ngClass]="{ invalid: invalid && (touched || dirty) }">{{
+    label
+  }}</label>
   <input
     type="text"
     class="custom-input-container__custom-input"
     [class.focused]="isFocused"
+    [class.invalid]="invalid"
     (focus)="isFocused = true"
     (blur)="isFocused = false"
     [value]="value"
     (input)="onInput($event)"
     [placeholder]="placeholder"
   />
+  <span class="validation-message" *ngIf="errors['required']"
+    >This field is required</span
+  >
 </div>
