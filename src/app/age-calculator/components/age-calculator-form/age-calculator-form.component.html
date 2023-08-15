@@ -1,10 +1,24 @@
 <div class="age-calculator-form__main">
-  <div class="age-calculator-form__main__date-input">
-    <app-text-input [label]="'DAY'" [placeholder]="'DD'"></app-text-input>
-    <app-text-input [label]="'MONTH'" [placeholder]="'MM'"></app-text-input>
-    <app-text-input [label]="'YEAR'" [placeholder]="'YYYY'"></app-text-input>
-  </div>
-  <div class="age-calculator-form__main__button">
-    <app-button> </app-button>
-  </div>
+  <form [formGroup]="form" (ngSubmit)="calculateAge()">
+    <div class="age-calculator-form__main__date-input">
+      <app-text-input
+        formControlName="day"
+        [label]="'DAY'"
+        [placeholder]="'DD'"
+      ></app-text-input>
+      <app-text-input
+        formControlName="month"
+        [label]="'MONTH'"
+        [placeholder]="'MM'"
+      ></app-text-input>
+      <app-text-input
+        formControlName="year"
+        [label]="'YEAR'"
+        [placeholder]="'YYYY'"
+      ></app-text-input>
+    </div>
+    <div class="age-calculator-form__main__button">
+      <app-button [type]="'submit'"> </app-button>
+    </div>
+  </form>
 </div>

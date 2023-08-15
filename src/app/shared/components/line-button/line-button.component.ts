@@ -11,6 +11,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class LineButtonComponent {
   @Input() disabled: boolean = false;
   @Input() icon: string = './src/assets/svg/icon-arrow.svg'; // Path to the SVG file
+  @Input() type: 'button' | 'submit' = 'button';
   @Output() buttonClick: EventEmitter<void> = new EventEmitter<void>();
 
   onClick(): void {

@@ -22,10 +22,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.custom-button:active {
-  background-color: $off-black;
+  &:active {
+    background-color: $off-black;
+  }
+  &:disabled {
+    background-color: $light-grey;
+    cursor: not-allowed;
+  }
 }
 
 .custom-button svg {
