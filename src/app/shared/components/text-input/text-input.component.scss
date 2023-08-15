@@ -4,7 +4,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
   &__custom-input {
     font-family: $font-family;
     font-weight: $font-weight-bold;
@@ -18,6 +17,9 @@
   &__custom-input.focused {
     border-color: $purple;
   }
+  &__custom-input.invalid {
+    border-color: $light-red;
+  }
   &__custom-input::placeholder {
     color: $smokey-grey;
   }
@@ -28,5 +30,13 @@
     margin-bottom: 5px;
     color: $smokey-grey;
     letter-spacing: 0.09em;
+    &.invalid {
+      color: $light-red;
+    }
+  }
+  .validation-message {
+    color: $light-red;
+    font-size: 12px;
+    margin-top: 5px;
   }
 }

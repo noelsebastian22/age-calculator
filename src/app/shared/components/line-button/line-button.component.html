@@ -1,6 +1,11 @@
 <div class="custom-button-container">
   <div class="horizontal-line"></div>
-  <button class="custom-button" [disabled]="disabled" (click)="onClick()">
+  <button
+    class="custom-button"
+    [type]="type"
+    [disabled]="disabled"
+    (click)="onClick()"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="46"
