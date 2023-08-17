@@ -11,4 +11,8 @@ export class AgeCalculatorMainComponent {
   ageService = inject(AgeCalculatorService);
 
   age = computed(() => this.ageService.ageSig());
+
+  checkForPlural(label: string, value: number): string {
+    return value === 1 ? label : `${label}s`;
+  }
 }
