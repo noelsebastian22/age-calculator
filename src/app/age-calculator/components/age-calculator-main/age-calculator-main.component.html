@@ -1,14 +1,20 @@
 <div class="age-calculator">
   <div class="age-calculator__age">
     <span class="age-calculator__age__number">{{ age()?.years ?? "--" }}</span>
-    <span class="age-calculator__age__text">years</span>
+    <span class="age-calculator__age__text"
+      >{{ checkForPlural("year", age()?.years ?? 0) }}
+    </span>
   </div>
   <div class="age-calculator__age">
     <span class="age-calculator__age__number">{{ age()?.months ?? "--" }}</span>
-    <span class="age-calculator__age__text">months</span>
+    <span class="age-calculator__age__text">{{
+      checkForPlural("month", age()?.months ?? 0)
+    }}</span>
   </div>
   <div class="age-calculator__age">
     <span class="age-calculator__age__number">{{ age()?.days ?? "--" }}</span>
-    <span class="age-calculator__age__text">days</span>
+    <span class="age-calculator__age__text">{{
+      checkForPlural("day", age()?.days ?? 0)
+    }}</span>
   </div>
 </div>
